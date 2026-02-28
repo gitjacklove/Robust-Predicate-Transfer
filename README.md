@@ -80,3 +80,9 @@ Step 4: Cmake and Make ./test_scripts/JOB&TPCH/ (or ./test_scripts/TPCDS/).
 Step 5: Run ./test (or run.sh). The result will be recorded in result.txt under the current directory.  
 Step 6: Change the /src/include/duckdb/optimizer/predicate_transfer/setting.hpp: use #define RandomLeftDeep / RandomBushy and comment #define PredicateTransfer. This tests the DuckDB join order robustness. 
 Step 7: Repeat Step 3-5.
+
+改了setting
+cd /home/d505-1/data/hlpro/PredTransDuckDB/build
+make -j$(nproc)
+cd /home/d505-1/data/hlpro/PredTransDuckDB/test_scripts/JOB\&TPCH
+make -j$(nproc)
