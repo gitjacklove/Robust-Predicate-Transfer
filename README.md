@@ -82,7 +82,12 @@ Step 6: Change the /src/include/duckdb/optimizer/predicate_transfer/setting.hpp:
 Step 7: Repeat Step 3-5.
 
 改了setting
+```
 cd /home/d505-1/data/hlpro/PredTransDuckDB/build
+```
 make -j$(nproc)
+```
 cd /home/d505-1/data/hlpro/PredTransDuckDB/test_scripts/JOB\&TPCH
+```
 make -j$(nproc)
+```
